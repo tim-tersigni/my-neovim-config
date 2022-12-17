@@ -6,7 +6,7 @@ local opt = vim.opt
 opt.colorcolumn = '80'		-- str: Show col for max line length
 opt.number = true		-- bool: Show line numbers
 opt.relativenumber = false	-- bool: Show relative line number
-opt.scrolloff = 4		-- int: Min num lines of context
+opt.scrolloff = 6		-- int: Min num lines of context
 opt.signcolumn = "yes"		-- str: Show the sign column
 
 -- Filetypes
@@ -20,6 +20,13 @@ opt.termguicolors = true	-- bool: If term supports ui colors, enable
 -- Search
 opt.incsearch = true		-- bool: Use incremental search
 opt.hlsearch = false        -- bool: Highlight search matches
+
+-- Swap File
+opt.swapfile = false
+opt.backup = false
+
+-- Undo
+opt.undofile = true
 
 -- Whitespace
 opt.expandtab = true		-- bool: Use spaces instead of tabs
