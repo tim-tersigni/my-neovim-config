@@ -25,15 +25,15 @@ vim.g.localleader = "\\"
 -- IMPORTS
 require('tim.vars')	-- Variables
 require('tim.opts')	-- Options
-require('tim.keys')	-- Keymaps
 require('tim.plug')	-- Plugins
+require('tim.keys')	-- Keymaps 
 
 -- SETTINGS
 
 
--- PLUGINS
-require('nvim-tree').setup()
-
+-- -- PLUGINS
+-- require('nvim-tree').setup()
+--require('telescope').setup()
 
 -- Sync packer
 if packer_bootstrap then
