@@ -35,6 +35,21 @@ return require('packer').startup(function(use)
       requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    -- Themes
+    use 'navarasu/onedark.nvim'
+    require('onedark').setup {
+        -- dark, darker, cool, deep, warm, warmer, light 
+        style = 'deep'
+    }
+    require('onedark').load()
+
+    -- Statusline
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+    require('lualine').setup()
+
     -- Sync packer
     if packer_bootstrap then
         require('packer').sync()
