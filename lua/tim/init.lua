@@ -32,7 +32,7 @@ require('tim.keys')	-- Keymaps
 
 
 -- -- PLUGINS
--- require('nvim-tree').setup()
+require('nvim-tree').setup()
 --require('telescope').setup()
 
 -- Sync packer
