@@ -6,8 +6,8 @@ local opt = vim.opt
 opt.colorcolumn = '80'		-- str: Show col for max line length
 opt.wrap = false            -- bool: Wrap text
 opt.number = true		    -- bool: Show line numbers
-opt.relativenumber = false	-- bool: Show relative line number
-opt.scrolloff = 6		    -- int: Min num lines of context
+opt.relativenumber = true   -- bool: Show relative line number
+opt.scrolloff = 8		    -- int: Min num lines of context
 opt.signcolumn = "yes"		-- str: Show the sign column
 opt.smartindent = true      -- bool: Smart indent
 
